@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Craig Ellis</title>
+    <link rel="shortcut icon" href="{{ url_for('static',filename='images/favicon.ico') }}">
+    <link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/index.css') }}">
+    <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.js"></script>
+    <script src="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+    <script src="https://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.9.0.js"></script>
+    <script src="{{url_for('static', filename="js/angular.js")}}"></script>
+
+</head>
+<body ng-app="angular" ng-controller="bodyController">
+<div class="wrapper">
+    <div style="margin-bottom: 15px; color: red; text-align: center ">
+        <h1 style="font-size: 42px">Craig Ellis</h1>
+    </div>
+    <div style="margin-left:10%; margin-right: 10%">
+        <ul class="nav nav-tabs">
+            <li class="active"><a href="#aboutMe" data-toggle="tab">About Me</a></li>
+            <li><a href="#hobbies" data-toggle="tab">Hobbies</a></li>
+            <li><a href="#education" data-toggle="tab">Education</a></li>
+            <li><a href="#work" data-toggle="tab">Work</a></li>
+            <li><a href="#projects" data-toggle="tab">Projects</a></li>
+            <li><a href="#contactMe" data-toggle="tab">Contact Me</a></li>
+        </ul>
+    </div>
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+        <div class="tab-pane active tabBody" id="aboutMe" ng-include="'static/views/aboutMe.html'"></div>
+        <div class="tab-pane tabBody" id="hobbies" ng-include="'static/views/hobbies.html'"></div>
+        <div class="tab-pane tabBody" id="education" ng-include="'static/views/education.html'"></div>
+        <div class="tab-pane tabBody" id="work" ng-include="'static/views/work.html'"></div>
+        <div class="tab-pane tabBody" id="projects" ng-include="'static/views/projects.html'"></div>
+        <div class="tab-pane tabBody" id="contactMe" ng-include="'static/views/contactMe.html'"></div>
+    </div>
+    <div class="push"></div>
+</div>
+<div class="footer" ng-include="'static/views/footer.html'" style="text-align: center"></div>
+</body>
+
+</html>
