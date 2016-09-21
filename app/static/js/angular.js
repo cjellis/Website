@@ -28,6 +28,10 @@ module.controller('bodyController', [ '$scope', '$http', function ($scope, $http
     ];
 
     $scope.classes = [
+        {"name": 'Wireless Networks'},
+        {"name": 'Network Security'},
+        {"name": 'Software Vulnerabilities and Security'},
+        {"name": 'Foundations of Information Assurance'},
         {"name": 'Network Fundamentals'},
         {"name": 'Algorithms and Data'},
         {"name": 'Software Development'},
