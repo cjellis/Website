@@ -50,6 +50,14 @@ module.controller('bodyController', [ '$scope', '$http', function ($scope, $http
         {"name": 'Physics 1'}
     ];
 
+    $scope.gradclasses = [
+        {"name": 'Wireless Networks'},
+        {"name": 'Network Security'},
+        {"name": 'Software Vulnerabilities and Security'},
+        {"name": 'Database Management'},
+        {"name": 'Game Artificial Intelligence'}
+    ];
+
     $scope.past = [
 
     ];

@@ -3,6 +3,23 @@
         <td>
 
             <h4>Northeastern University in Boston, MA</h4> <br>
+            Candidate for Master's of Science in Computer Science with a Concentration in Information Security <br>
+            GPA: 4.0 <br>
+
+        </td>
+        <td>
+            <div style="padding-left: 20%;">
+                Classes taken:
+                <ul>
+                    <li ng-repeat="class in gradclasses">{{class.name}}</li>
+                </ul>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+
+            <h4>Northeastern University in Boston, MA</h4> <br>
             Bachelor's of Science in Computer Science with a Concentration in Cyber Operations <br>
             Graduated May 2017 <br>
             GPA: 3.90, Summa Cum Laude <br>
@@ -17,17 +34,6 @@
                     <li ng-repeat="class in classes">{{class.name}}</li>
                 </ul>
             </div>
-        </td>
-    </tr>
-    <tr>
-        <td>
-
-            <h4>Northeastern University in Boston, MA</h4> <br>
-            Master's of Science in Computer Science with a Specialty in Information Security <br>
-            Expected Graduation May 2019 <br>
-            GPA: 4<br>
-        </td>
-        <td>
         </td>
     </tr>
 </table>
